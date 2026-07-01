@@ -720,27 +720,22 @@
       text-align: center;
     }
 
-    .cta-btns {
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .btn-dark {
-      background: var(--brown-mid);
+    .email-contact {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      background: var(--brown-dark);
       color: var(--cream-white);
-      padding: 0.875rem 2rem;
+      padding: 1rem 2rem;
       border-radius: 4px;
       text-decoration: none;
       font-weight: 600;
-      font-size: 0.925rem;
+      font-size: 1rem;
       transition: all 0.2s;
-      display: inline-block;
     }
 
-    .btn-dark:hover {
-      background: var(--brown-dark);
+    .email-contact:hover {
+      background: var(--brown-mid);
       transform: translateY(-1px);
     }
 
@@ -779,34 +774,10 @@
 
     .footer-links a:hover { color: var(--brown-light); }
 
-    .footer-social {
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-      margin-bottom: 2rem;
-    }
-
-    .social-btn {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.1);
-      color: var(--cream-white);
-      padding: 0.5rem 1.25rem;
-      border-radius: 4px;
-      text-decoration: none;
-      font-size: 0.82rem;
-      font-weight: 500;
-      transition: all 0.2s;
-    }
-
-    .social-btn:hover {
-      background: rgba(255,255,255,0.1);
-      border-color: var(--brown-light);
-      color: var(--brown-light);
-    }
-
     .footer-copy {
       font-size: 0.78rem;
       color: rgba(255,253,249,0.3);
+      margin-top: 1.5rem;
     }
 
     /* MOBILE */
@@ -824,7 +795,6 @@
     @media (max-width: 480px) {
       .process-steps { grid-template-columns: 1fr; }
       .hero-btns { flex-direction: column; }
-      .cta-btns { flex-direction: column; align-items: center; }
     }
   </style>
 </head>
@@ -859,17 +829,17 @@
             <span class="stat-label">ATS Score</span>
           </div>
           <div class="stat-item">
-            <span class="stat-num">NHS</span>
-            <span class="stat-label">Specialist</span>
-          </div>
-          <div class="stat-item">
             <span class="stat-num">UK</span>
             <span class="stat-label">Based</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Tailored</span>
           </div>
         </div>
       </div>
       <div class="hero-card">
-        <p class="hero-card-title">✦ Services at a Glance</p>
+        <p class="hero-card-title">✦ What We Offer</p>
         <div class="service-pill"><span class="service-pill-name">CV Rewrite (ATS Optimised)</span><span class="service-pill-price">£27</span></div>
         <div class="service-pill"><span class="service-pill-name">CV + LinkedIn Bundle</span><span class="service-pill-price">£68</span></div>
         <div class="service-pill"><span class="service-pill-name">CV & Career Boost Package</span><span class="service-pill-price">£105</span></div>
@@ -882,7 +852,7 @@
 
   <!-- TRUST BAR -->
   <div class="trust-bar">
-    <p>Specialising in <span>NHS</span>, <span>Civil Service</span> & <span>UK Public Sector</span> applications · Greater Manchester based · Results-driven career support</p>
+    <p>Specialising in <span>NHS</span>, <span>Civil Service</span> & <span>UK Public Sector</span> applications · Results-driven career support</p>
   </div>
 
   <!-- ABOUT -->
@@ -891,13 +861,13 @@
       <div class="about-grid">
         <div class="about-visual">
           <p class="about-quote">"I know what NHS recruiters look for — because I work in the NHS."</p>
-          <p class="about-quote-author">— Ore, Career Coach & NHS Professional</p>
+          <p class="about-quote-author">— Career Coach & NHS Professional</p>
         </div>
         <div class="about-text">
           <span class="section-eyebrow">About</span>
           <h2 class="section-title">Career support from someone who's been there</h2>
-          <p>I'm Ore — a UK-based career coach, CV writer, and NHS professional. I help people land NHS, Civil Service, and public sector roles through tailored, professionally written applications that actually get results.</p>
-          <p>Having navigated the NHS hiring process myself, I understand exactly what recruiters score, what gets filtered out, and how to position your experience so it counts.</p>
+          <p>We are a UK-based career coaching service helping people land NHS, Civil Service, and public sector roles through tailored, professionally written applications that actually get results.</p>
+          <p>Having navigated the NHS hiring process first-hand, we understand exactly what recruiters score, what gets filtered out, and how to position your experience so it counts.</p>
           <div class="about-highlights">
             <div class="highlight-item"><span class="highlight-dot"></span>NHS & Civil Service application specialist</div>
             <div class="highlight-item"><span class="highlight-dot"></span>99% ATS-optimised CV rewrites</div>
@@ -953,15 +923,15 @@
         </div>
 
         <div class="service-card">
-          <div class="service-icon">🤖</div>
+          <div class="service-icon">🖥️</div>
           <p class="service-name">ApplicationPro — 1 Month</p>
-          <p class="service-desc">AI-powered tool to generate NHS & Civil Service applications, CV rewrites, interview prep and more — on demand, any time.</p>
+          <p class="service-desc">Online tool to generate NHS & Civil Service applications, CV rewrites, interview prep and more — on demand, any time.</p>
           <p class="service-price">£65 <span>/month</span></p>
           <a href="https://buy.stripe.com/14A00d3yI4DJ55e3bz4Ni02" target="_blank" class="service-btn">Get Access →</a>
         </div>
 
         <div class="service-card">
-          <div class="service-icon">🤖</div>
+          <div class="service-icon">🖥️</div>
           <p class="service-name">ApplicationPro — 3 Months</p>
           <p class="service-desc">Full 3-month access to ApplicationPro UK. Best value for active job seekers applying to multiple roles.</p>
           <p class="service-price">£155 <span>3 months</span></p>
@@ -976,13 +946,13 @@
   <section class="process">
     <div class="container">
       <span class="section-eyebrow">How It Works</span>
-      <h2 class="section-title">From DM to dream job</h2>
+      <h2 class="section-title">From enquiry to hired</h2>
       <p class="section-sub">A simple, fast process designed around busy people.</p>
       <div class="process-steps">
         <div class="process-step">
           <div class="step-num">1</div>
-          <p class="step-title">Reach Out</p>
-          <p class="step-desc">DM me on TikTok or Instagram or contact me via this site.</p>
+          <p class="step-title">Get in Touch</p>
+          <p class="step-desc">Email us or click any service button to get started.</p>
         </div>
         <div class="process-step">
           <div class="step-num">2</div>
@@ -1030,10 +1000,10 @@
         </div>
 
         <div class="digital-card">
-          <div class="digital-icon">🏥</div>
+          <div class="digital-icon">🖥️</div>
           <div class="digital-info">
             <p class="digital-name">ApplicationPro — 1 Month Access</p>
-            <p class="digital-desc">AI tool for NHS & Civil Service statements, CV rewrites, interview prep and more.</p>
+            <p class="digital-desc">Online tool for NHS & Civil Service statements, CV rewrites, interview prep and more.</p>
             <p class="digital-price">£65</p>
             <a href="https://buy.stripe.com/14A00d3yI4DJ55e3bz4Ni02" target="_blank" class="digital-btn">Get Access →</a>
           </div>
@@ -1062,9 +1032,9 @@
       <div class="testimonials-grid">
         <div class="testimonial-card">
           <p class="stars">★★★★★</p>
-          <p class="testimonial-text">"After months of no interviews, I got called within 2 weeks of submitting my new NHS application. Ore knows exactly what they're looking for."</p>
+          <p class="testimonial-text">"After months of no interviews, I got called within 2 weeks of submitting my new NHS application. They know exactly what recruiters are looking for."</p>
           <p class="testimonial-author">NHS Healthcare Assistant</p>
-          <p class="testimonial-role">Band 2, Greater Manchester</p>
+          <p class="testimonial-role">Band 2, UK</p>
         </div>
         <div class="testimonial-card">
           <p class="stars">★★★★★</p>
@@ -1095,11 +1065,10 @@
     <div class="container">
       <span class="section-eyebrow">Get Started</span>
       <h2 class="section-title">Ready to land your next role?</h2>
-      <p class="section-sub">DM me on TikTok or Instagram and let's get your application sorted. Most packages are turned around within 48–72 hours.</p>
-      <div class="cta-btns">
-        <a href="https://tiktok.com/@lifewith_ore" target="_blank" class="btn-primary">DM on TikTok</a>
-        <a href="https://instagram.com/lifewithore" target="_blank" class="btn-dark">DM on Instagram</a>
-      </div>
+      <p class="section-sub">Get in touch and let's get your application sorted. Most packages are turned around within 48–72 hours.</p>
+      <a href="mailto:lifewithore@gmail.com" class="email-contact">
+        ✉️ lifewithore@gmail.com
+      </a>
     </div>
   </section>
 
@@ -1111,13 +1080,9 @@
       <li><a href="#services">Services</a></li>
       <li><a href="#digital">Digital Products</a></li>
       <li><a href="#testimonials">Results</a></li>
-      <li><a href="https://applicationpro.lifewithore.co.uk" target="_blank">ApplicationPro</a></li>
+      <li><a href="https://applicationpro-uk.vercel.app/" target="_blank">ApplicationPro</a></li>
     </ul>
-    <div class="footer-social">
-      <a href="https://tiktok.com/@lifewith_ore" target="_blank" class="social-btn">TikTok @lifewith_ore</a>
-      <a href="https://instagram.com/lifewithore" target="_blank" class="social-btn">Instagram @lifewithore</a>
-    </div>
-    <p class="footer-copy">© 2026 LifewithOre Career Services · Greater Manchester, UK · withore.co.uk</p>
+    <p class="footer-copy">© 2026 LifewithOre Career Services · UK · withore.co.uk</p>
   </footer>
 
 </body>
