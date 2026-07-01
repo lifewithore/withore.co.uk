@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>With Ore | Career Services & NHS Applications UK</title>
+  <meta name="description" content="Professional CV rewrites, NHS application packages, LinkedIn optimisation and career coaching by Ore. UK-based career services that get results." />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --brown-dark:   #7B5B3A;
+      --brown-mid:    #A07850;
+      --brown-light:  #C4A882;
+      --cream-deep:   #F5EDE0;
+      --cream-light:  #FAF5EE;
+      --cream-white:  #FFFDF9;
+      --text-dark:    #3D2B1A;
+      --text-mid:     #6B4E35;
+      --text-soft:    #9C7A5E;
+      --accent:       #C4A882;
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body:    'Inter', system-ui, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--cream-white);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(255,253,249,0.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(123,91,58,0.12);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--brown-dark);
+      text-decoration: none;
+      letter-spacing: -0.02em;
+    }
+
+    .nav-logo span { color: var(--brown-light); }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-mid);
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--brown-dark); }
+
+    .nav-cta {
+      background: var(--brown-dark) !important;
+      color: var(--cream-white) !important;
+      padding: 0.5rem 1.25rem;
+      border-radius: 4px;
+    }
+
+    .nav-cta:hover { background: var(--brown-mid) !important; }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #C4A882 0%, #D4BC9C 40%, #E8D8C4 100%);
+      display: flex;
+      align-items: center;
+      padding: 7rem 2rem 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -80px; right: -80px;
+      width: 450px; height: 450px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,253,249,0.25) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -60px; left: -60px;
+      width: 350px; height: 350px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(123,91,58,0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-eyebrow {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--brown-dark);
+      margin-bottom: 1.25rem;
+      border: 1px solid rgba(123,91,58,0.35);
+      padding: 0.3rem 0.75rem;
+      border-radius: 2px;
+      background: rgba(255,253,249,0.4);
+    }
+
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.2rem, 4vw, 3.5rem);
+      font-weight: 700;
+      color: var(--brown-dark);
+      line-height: 1.15;
+      margin-bottom: 1.25rem;
+      letter-spacing: -0.02em;
+    }
+
+    .hero h1 em {
+      font-style: italic;
+      color: var(--cream-white);
+    }
+
+    .hero-sub {
+      font-size: 1.05rem;
+      color: var(--text-dark);
+      margin-bottom: 2.5rem;
+      font-weight: 400;
+      line-height: 1.7;
+      opacity: 0.85;
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: var(--brown-dark);
+      color: var(--cream-white);
+      padding: 0.875rem 2rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.925rem;
+      transition: all 0.2s;
+      display: inline-block;
+    }
+
+    .btn-primary:hover {
+      background: var(--text-dark);
+      transform: translateY(-1px);
+    }
+
+    .btn-outline {
+      border: 1.5px solid rgba(123,91,58,0.5);
+      color: var(--brown-dark);
+      padding: 0.875rem 2rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.925rem;
+      transition: all 0.2s;
+      display: inline-block;
+      background: rgba(255,253,249,0.4);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--brown-dark);
+      background: rgba(255,253,249,0.6);
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 2rem;
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(123,91,58,0.2);
+    }
+
+    .stat-num {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--brown-dark);
+      display: block;
+    }
+
+    .stat-label {
+      font-size: 0.75rem;
+      color: var(--text-mid);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .hero-card {
+      background: rgba(255,253,249,0.85);
+      border: 1px solid rgba(123,91,58,0.15);
+      border-radius: 12px;
+      padding: 2rem;
+      backdrop-filter: blur(4px);
+      box-shadow: 0 8px 40px rgba(123,91,58,0.12);
+    }
+
+    .hero-card-title {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      color: var(--brown-dark);
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgba(123,91,58,0.12);
+      font-weight: 600;
+    }
+
+    .service-pill {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.7rem 0;
+      border-bottom: 1px solid rgba(123,91,58,0.07);
+    }
+
+    .service-pill:last-child { border-bottom: none; }
+
+    .service-pill-name {
+      font-size: 0.85rem;
+      color: var(--text-mid);
+    }
+
+    .service-pill-price {
+      font-weight: 700;
+      color: var(--brown-dark);
+      font-size: 0.9rem;
+    }
+
+    /* TRUST BAR */
+    .trust-bar {
+      background: var(--brown-dark);
+      padding: 1.1rem 2rem;
+      text-align: center;
+    }
+
+    .trust-bar p {
+      font-size: 0.85rem;
+      color: rgba(255,253,249,0.85);
+      font-weight: 400;
+      letter-spacing: 0.03em;
+    }
+
+    .trust-bar span {
+      color: var(--cream-light);
+      font-weight: 600;
+    }
+
+    /* SECTIONS */
+    section { padding: 5rem 2rem; }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section-eyebrow {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--brown-light);
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.75rem, 3vw, 2.5rem);
+      font-weight: 700;
+      color: var(--brown-dark);
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
+    }
+
+    .section-sub {
+      font-size: 1rem;
+      color: var(--text-soft);
+      max-width: 540px;
+      line-height: 1.7;
+    }
+
+    /* ABOUT */
+    .about { background: var(--cream-white); }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+
+    .about-visual {
+      background: linear-gradient(135deg, var(--brown-dark) 0%, var(--brown-mid) 100%);
+      border-radius: 12px;
+      padding: 3rem;
+    }
+
+    .about-quote {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      color: var(--cream-white);
+      line-height: 1.55;
+      font-style: italic;
+    }
+
+    .about-quote-author {
+      margin-top: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--cream-deep);
+      font-weight: 600;
+      letter-spacing: 0.04em;
+    }
+
+    .about-text p {
+      color: var(--text-mid);
+      margin-bottom: 1.25rem;
+      line-height: 1.75;
+    }
+
+    .about-highlights {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+
+    .highlight-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.9rem;
+      color: var(--text-mid);
+      font-weight: 500;
+    }
+
+    .highlight-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--brown-light);
+      flex-shrink: 0;
+    }
+
+    /* SERVICES */
+    .services { background: var(--cream-light); }
+
+    .services-header { margin-bottom: 3rem; }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .service-card {
+      background: var(--cream-white);
+      border: 1px solid rgba(123,91,58,0.1);
+      border-radius: 10px;
+      padding: 1.75rem;
+      transition: all 0.25s;
+      position: relative;
+    }
+
+    .service-card:hover {
+      border-color: var(--brown-light);
+      box-shadow: 0 8px 30px rgba(123,91,58,0.1);
+      transform: translateY(-2px);
+    }
+
+    .service-card.featured {
+      background: linear-gradient(135deg, var(--brown-dark) 0%, var(--brown-mid) 100%);
+      border-color: transparent;
+    }
+
+    .featured-badge {
+      position: absolute;
+      top: -10px; right: 1rem;
+      background: var(--brown-light);
+      color: var(--cream-white);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.6rem;
+      border-radius: 2px;
+    }
+
+    .service-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 8px;
+      background: var(--cream-deep);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .service-card.featured .service-icon {
+      background: rgba(255,253,249,0.15);
+    }
+
+    .service-name {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--brown-dark);
+      margin-bottom: 0.5rem;
+    }
+
+    .service-card.featured .service-name { color: var(--cream-white); }
+
+    .service-desc {
+      font-size: 0.85rem;
+      color: var(--text-soft);
+      line-height: 1.6;
+      margin-bottom: 1.25rem;
+    }
+
+    .service-card.featured .service-desc { color: rgba(255,253,249,0.75); }
+
+    .service-price {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--brown-dark);
+      font-family: var(--font-display);
+    }
+
+    .service-card.featured .service-price { color: var(--cream-white); }
+
+    .service-price span {
+      font-size: 0.8rem;
+      font-weight: 400;
+      color: var(--text-soft);
+      font-family: var(--font-body);
+    }
+
+    .service-card.featured .service-price span { color: rgba(255,253,249,0.55); }
+
+    .service-btn {
+      display: block;
+      margin-top: 1.25rem;
+      text-align: center;
+      padding: 0.65rem 1rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: all 0.2s;
+      background: var(--cream-deep);
+      color: var(--brown-dark);
+    }
+
+    .service-card.featured .service-btn {
+      background: rgba(255,253,249,0.2);
+      color: var(--cream-white);
+      border: 1px solid rgba(255,253,249,0.3);
+    }
+
+    .service-btn:hover { opacity: 0.85; }
+
+    /* DIGITAL PRODUCTS */
+    .digital { background: var(--cream-white); }
+
+    .digital-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .digital-card {
+      background: var(--cream-light);
+      border: 1px solid rgba(123,91,58,0.08);
+      border-radius: 10px;
+      padding: 1.5rem;
+      display: flex;
+      gap: 1.25rem;
+      align-items: flex-start;
+      transition: all 0.2s;
+    }
+
+    .digital-card:hover {
+      border-color: var(--brown-light);
+      box-shadow: 0 4px 20px rgba(123,91,58,0.08);
+    }
+
+    .digital-icon {
+      font-size: 1.75rem;
+      flex-shrink: 0;
+      width: 52px;
+      height: 52px;
+      background: var(--cream-deep);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .digital-info { flex: 1; }
+
+    .digital-name {
+      font-weight: 600;
+      color: var(--brown-dark);
+      font-size: 0.95rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .digital-desc {
+      font-size: 0.82rem;
+      color: var(--text-soft);
+      line-height: 1.55;
+      margin-bottom: 0.75rem;
+    }
+
+    .digital-price {
+      font-weight: 700;
+      color: var(--brown-mid);
+      font-size: 1rem;
+    }
+
+    .digital-price.free { color: #2d7d46; }
+
+    .digital-btn {
+      display: inline-block;
+      margin-top: 0.75rem;
+      background: var(--brown-dark);
+      color: var(--cream-white);
+      padding: 0.5rem 1.1rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 0.8rem;
+      font-weight: 600;
+      transition: all 0.2s;
+    }
+
+    .digital-btn:hover { background: var(--brown-mid); }
+
+    /* TESTIMONIALS */
+    .testimonials { background: var(--cream-deep); }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .testimonial-card {
+      background: var(--cream-white);
+      border-radius: 10px;
+      padding: 1.75rem;
+      border: 1px solid rgba(123,91,58,0.08);
+    }
+
+    .stars {
+      color: var(--brown-light);
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      letter-spacing: 2px;
+    }
+
+    .testimonial-text {
+      font-size: 0.9rem;
+      color: var(--text-mid);
+      line-height: 1.7;
+      font-style: italic;
+      margin-bottom: 1.25rem;
+    }
+
+    .testimonial-author {
+      font-weight: 600;
+      font-size: 0.85rem;
+      color: var(--brown-dark);
+    }
+
+    .testimonial-role {
+      font-size: 0.78rem;
+      color: var(--text-soft);
+    }
+
+    /* HOW IT WORKS */
+    .process { background: var(--brown-dark); }
+
+    .process .section-title { color: var(--cream-white); }
+    .process .section-eyebrow { color: var(--cream-light); opacity: 0.7; }
+    .process .section-sub { color: rgba(255,253,249,0.65); }
+
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      margin-top: 3.5rem;
+      position: relative;
+    }
+
+    .process-steps::before {
+      content: '';
+      position: absolute;
+      top: 24px;
+      left: 10%;
+      right: 10%;
+      height: 1px;
+      background: rgba(255,253,249,0.15);
+    }
+
+    .process-step { text-align: center; position: relative; }
+
+    .step-num {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--brown-light);
+      color: var(--cream-white);
+      font-weight: 700;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.25rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .step-title {
+      font-family: var(--font-display);
+      font-size: 0.95rem;
+      color: var(--cream-white);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .step-desc {
+      font-size: 0.8rem;
+      color: rgba(255,253,249,0.6);
+      line-height: 1.6;
+    }
+
+    /* REFUND */
+    .refund {
+      background: var(--cream-light);
+      padding: 3rem 2rem;
+    }
+
+    .refund-inner {
+      max-width: 700px;
+      margin: 0 auto;
+      background: var(--cream-deep);
+      border: 1px solid rgba(123,91,58,0.12);
+      border-radius: 10px;
+      padding: 2rem;
+    }
+
+    .refund-title {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      color: var(--brown-dark);
+      margin-bottom: 0.75rem;
+      font-weight: 600;
+    }
+
+    .refund-text {
+      font-size: 0.85rem;
+      color: var(--text-soft);
+      line-height: 1.7;
+    }
+
+    /* CTA */
+    .cta-section {
+      background: var(--cream-deep);
+      text-align: center;
+      padding: 5rem 2rem;
+    }
+
+    .cta-section .section-sub {
+      margin: 0 auto 2.5rem;
+      text-align: center;
+    }
+
+    .cta-btns {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-dark {
+      background: var(--brown-mid);
+      color: var(--cream-white);
+      padding: 0.875rem 2rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.925rem;
+      transition: all 0.2s;
+      display: inline-block;
+    }
+
+    .btn-dark:hover {
+      background: var(--brown-dark);
+      transform: translateY(-1px);
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--text-dark);
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .footer-logo {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      color: var(--cream-white);
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .footer-logo span { color: var(--brown-light); }
+
+    .footer-links {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      list-style: none;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: rgba(255,253,249,0.55);
+      text-decoration: none;
+      font-size: 0.85rem;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--brown-light); }
+
+    .footer-social {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    .social-btn {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      color: var(--cream-white);
+      padding: 0.5rem 1.25rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+
+    .social-btn:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: var(--brown-light);
+      color: var(--brown-light);
+    }
+
+    .footer-copy {
+      font-size: 0.78rem;
+      color: rgba(255,253,249,0.3);
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .hero-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+      .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .services-grid { grid-template-columns: 1fr; }
+      .digital-grid { grid-template-columns: 1fr; }
+      .testimonials-grid { grid-template-columns: 1fr; }
+      .process-steps { grid-template-columns: repeat(2, 1fr); }
+      .process-steps::before { display: none; }
+    }
+
+    @media (max-width: 480px) {
+      .process-steps { grid-template-columns: 1fr; }
+      .hero-btns { flex-direction: column; }
+      .cta-btns { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo">with<span>ore</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#digital">Digital Products</a></li>
+      <li><a href="#testimonials">Results</a></li>
+      <li><a href="#contact" class="nav-cta">Work With Me</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <span class="hero-eyebrow">UK Career Services</span>
+        <h1>Land the Job.<br/><em>Not Just</em><br/>the Interview.</h1>
+        <p class="hero-sub">Expert CV rewrites, NHS application packages, and LinkedIn optimisation that get you noticed — and hired.</p>
+        <div class="hero-btns">
+          <a href="#services" class="btn-primary">View Services</a>
+          <a href="#about" class="btn-outline">Learn More</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num">99%</span>
+            <span class="stat-label">ATS Score</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">NHS</span>
+            <span class="stat-label">Specialist</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">UK</span>
+            <span class="stat-label">Based</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <p class="hero-card-title">✦ Services at a Glance</p>
+        <div class="service-pill"><span class="service-pill-name">CV Rewrite (ATS Optimised)</span><span class="service-pill-price">£27</span></div>
+        <div class="service-pill"><span class="service-pill-name">CV + LinkedIn Bundle</span><span class="service-pill-price">£68</span></div>
+        <div class="service-pill"><span class="service-pill-name">CV & Career Boost Package</span><span class="service-pill-price">£105</span></div>
+        <div class="service-pill"><span class="service-pill-name">NHS Application Package</span><span class="service-pill-price">£205</span></div>
+        <div class="service-pill"><span class="service-pill-name">ApplicationPro Access</span><span class="service-pill-price">from £65</span></div>
+        <div class="service-pill"><span class="service-pill-name">CV Review & Strategy Session</span><span class="service-pill-price">£22</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <div class="trust-bar">
+    <p>Specialising in <span>NHS</span>, <span>Civil Service</span> & <span>UK Public Sector</span> applications · Greater Manchester based · Results-driven career support</p>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <p class="about-quote">"I know what NHS recruiters look for — because I work in the NHS."</p>
+          <p class="about-quote-author">— Ore, Career Coach & NHS Professional</p>
+        </div>
+        <div class="about-text">
+          <span class="section-eyebrow">About</span>
+          <h2 class="section-title">Career support from someone who's been there</h2>
+          <p>I'm Ore — a UK-based career coach, CV writer, and NHS professional. I help people land NHS, Civil Service, and public sector roles through tailored, professionally written applications that actually get results.</p>
+          <p>Having navigated the NHS hiring process myself, I understand exactly what recruiters score, what gets filtered out, and how to position your experience so it counts.</p>
+          <div class="about-highlights">
+            <div class="highlight-item"><span class="highlight-dot"></span>NHS & Civil Service application specialist</div>
+            <div class="highlight-item"><span class="highlight-dot"></span>99% ATS-optimised CV rewrites</div>
+            <div class="highlight-item"><span class="highlight-dot"></span>Values-based & person spec matched statements</div>
+            <div class="highlight-item"><span class="highlight-dot"></span>LinkedIn profiles that attract recruiters</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="services-header">
+        <span class="section-eyebrow">Services</span>
+        <h2 class="section-title">Choose your package</h2>
+        <p class="section-sub">Every service is tailored to your specific role, sector, and experience level. No templates. No copy-paste.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-icon">📄</div>
+          <p class="service-name">CV Rewrite</p>
+          <p class="service-desc">A fully rewritten, ATS-optimised CV tailored to your target role. Professionally formatted, metrics-driven, and recruiter-ready.</p>
+          <p class="service-price">£27 <span>one-off</span></p>
+          <a href="https://buy.stripe.com/3cI3cpc5e2vB2X67rP4Ni01" target="_blank" class="service-btn">Get Started →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">💼</div>
+          <p class="service-name">CV + LinkedIn Bundle</p>
+          <p class="service-desc">Your CV rewritten plus a fully optimised LinkedIn profile — headline, summary, and experience aligned to attract the right opportunities.</p>
+          <p class="service-price">£68 <span>bundle</span></p>
+          <a href="https://buy.stripe.com/28E5kxgludaf1T2dQd4Ni04" target="_blank" class="service-btn">Get Started →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">📋</div>
+          <p class="service-name">CV Review & Strategy</p>
+          <p class="service-desc">A 1-on-1 session to review your current CV, identify gaps, and map out a clear application strategy for your target roles.</p>
+          <p class="service-price">£22 <span>per session</span></p>
+          <a href="https://buy.stripe.com/cNiaER7OY1rx8hq3bz4Ni05" target="_blank" class="service-btn">Book Now →</a>
+        </div>
+
+        <div class="service-card featured">
+          <span class="featured-badge">Most Popular</span>
+          <div class="service-icon">🏥</div>
+          <p class="service-name">NHS Application Package</p>
+          <p class="service-desc">Complete done-for-you NHS application. CV, values-based supporting statement matched to the person spec, and TRAC profile content.</p>
+          <p class="service-price">£205 <span>full package</span></p>
+          <a href="https://buy.stripe.com/00w6oB4CM2vBcxG9zX4Ni06" target="_blank" class="service-btn">Get Started →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🤖</div>
+          <p class="service-name">ApplicationPro — 1 Month</p>
+          <p class="service-desc">AI-powered tool to generate NHS & Civil Service applications, CV rewrites, interview prep and more — on demand, any time.</p>
+          <p class="service-price">£65 <span>/month</span></p>
+          <a href="https://buy.stripe.com/14A00d3yI4DJ55e3bz4Ni02" target="_blank" class="service-btn">Get Access →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🤖</div>
+          <p class="service-name">ApplicationPro — 3 Months</p>
+          <p class="service-desc">Full 3-month access to ApplicationPro UK. Best value for active job seekers applying to multiple roles.</p>
+          <p class="service-price">£155 <span>3 months</span></p>
+          <a href="https://buy.stripe.com/5kQ14h4CM1rx7dm7rP4Ni03" target="_blank" class="service-btn">Get Access →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="process">
+    <div class="container">
+      <span class="section-eyebrow">How It Works</span>
+      <h2 class="section-title">From DM to dream job</h2>
+      <p class="section-sub">A simple, fast process designed around busy people.</p>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-num">1</div>
+          <p class="step-title">Reach Out</p>
+          <p class="step-desc">DM me on TikTok or Instagram or contact me via this site.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-num">2</div>
+          <p class="step-title">Share Your Details</p>
+          <p class="step-desc">Send your current CV, job description, and target role.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-num">3</div>
+          <p class="step-title">We Get to Work</p>
+          <p class="step-desc">Your documents are professionally crafted and tailored.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-num">4</div>
+          <p class="step-title">You Apply & Win</p>
+          <p class="step-desc">Submit with confidence and start getting interviews.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIGITAL PRODUCTS -->
+  <section class="digital" id="digital">
+    <div class="container">
+      <span class="section-eyebrow">Digital Products</span>
+      <h2 class="section-title">Self-serve resources</h2>
+      <p class="section-sub">Instant downloads and tools to help you apply smarter, right now.</p>
+      <div class="digital-grid">
+
+        <div class="digital-card">
+          <div class="digital-icon">📄</div>
+          <div class="digital-info">
+            <p class="digital-name">UK Professional CV Template</p>
+            <p class="digital-desc">ATS-optimised, recruiter-approved CV template. Instant download. Ready to fill in and submit.</p>
+            <p class="digital-price">£6.99</p>
+          </div>
+        </div>
+
+        <div class="digital-card">
+          <div class="digital-icon">✉️</div>
+          <div class="digital-info">
+            <p class="digital-name">Cover Letter Template</p>
+            <p class="digital-desc">The cover letter that gets interviews. Proven structure, free to download and use today.</p>
+            <p class="digital-price free">Free</p>
+          </div>
+        </div>
+
+        <div class="digital-card">
+          <div class="digital-icon">🏥</div>
+          <div class="digital-info">
+            <p class="digital-name">ApplicationPro — 1 Month Access</p>
+            <p class="digital-desc">AI tool for NHS & Civil Service statements, CV rewrites, interview prep and more.</p>
+            <p class="digital-price">£65</p>
+            <a href="https://buy.stripe.com/14A00d3yI4DJ55e3bz4Ni02" target="_blank" class="digital-btn">Get Access →</a>
+          </div>
+        </div>
+
+        <div class="digital-card">
+          <div class="digital-icon">📅</div>
+          <div class="digital-info">
+            <p class="digital-name">ApplicationPro — 3 Month Access</p>
+            <p class="digital-desc">Full 3-month access to ApplicationPro UK. Best value for active job seekers.</p>
+            <p class="digital-price">£155</p>
+            <a href="https://buy.stripe.com/5kQ14h4CM1rx7dm7rP4Ni03" target="_blank" class="digital-btn">Get Access →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <span class="section-eyebrow">Results</span>
+      <h2 class="section-title">Clients who got hired</h2>
+      <p class="section-sub">Real people. Real jobs. Real results.</p>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <p class="stars">★★★★★</p>
+          <p class="testimonial-text">"After months of no interviews, I got called within 2 weeks of submitting my new NHS application. Ore knows exactly what they're looking for."</p>
+          <p class="testimonial-author">NHS Healthcare Assistant</p>
+          <p class="testimonial-role">Band 2, Greater Manchester</p>
+        </div>
+        <div class="testimonial-card">
+          <p class="stars">★★★★★</p>
+          <p class="testimonial-text">"My CV was completely transformed. Professional, clean, and it actually got me shortlisted for roles I didn't think I could get."</p>
+          <p class="testimonial-author">Civil Service Applicant</p>
+          <p class="testimonial-role">Administrative Officer</p>
+        </div>
+        <div class="testimonial-card">
+          <p class="stars">★★★★★</p>
+          <p class="testimonial-text">"Worth every penny. The supporting statement was so well written and matched the person spec perfectly. I got the interview and the job!"</p>
+          <p class="testimonial-author">NHS Support Worker</p>
+          <p class="testimonial-role">Band 3, NHS Foundation Trust</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REFUND -->
+  <section class="refund">
+    <div class="refund-inner">
+      <p class="refund-title">📋 Refund Policy</p>
+      <p class="refund-text">By purchasing any digital product or service, you acknowledge and agree that no refunds, exchanges, or cancellations will be provided once access has been granted, a password has been issued, or any digital files, templates, guides, or resources have been delivered. If you experience any technical issues accessing your product, please contact us and we will be happy to assist.</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" id="contact">
+    <div class="container">
+      <span class="section-eyebrow">Get Started</span>
+      <h2 class="section-title">Ready to land your next role?</h2>
+      <p class="section-sub">DM me on TikTok or Instagram and let's get your application sorted. Most packages are turned around within 48–72 hours.</p>
+      <div class="cta-btns">
+        <a href="https://tiktok.com/@lifewith_ore" target="_blank" class="btn-primary">DM on TikTok</a>
+        <a href="https://instagram.com/lifewithore" target="_blank" class="btn-dark">DM on Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="footer-logo">with<span>ore</span></p>
+    <ul class="footer-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#digital">Digital Products</a></li>
+      <li><a href="#testimonials">Results</a></li>
+      <li><a href="https://applicationpro.lifewithore.co.uk" target="_blank">ApplicationPro</a></li>
+    </ul>
+    <div class="footer-social">
+      <a href="https://tiktok.com/@lifewith_ore" target="_blank" class="social-btn">TikTok @lifewith_ore</a>
+      <a href="https://instagram.com/lifewithore" target="_blank" class="social-btn">Instagram @lifewithore</a>
+    </div>
+    <p class="footer-copy">© 2026 LifewithOre Career Services · Greater Manchester, UK · withore.co.uk</p>
+  </footer>
+
+</body>
+</html>
